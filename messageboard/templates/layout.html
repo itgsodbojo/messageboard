@@ -1,0 +1,13 @@
+<html>
+  <head>
+   <link rel="stylesheet" type="text/css " href="static/css/style.css"/>
+    {% if title %}
+        <title>{{title}}</title>
+    {% else %}
+        <title>No title</title>
+    {% endif %}
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+  </body>
+</html>
