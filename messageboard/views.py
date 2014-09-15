@@ -30,13 +30,11 @@ def user_setting(name):
     return "Hello " + name + " your settings"
 
 #post
-@app.route('/user', methods=["GET","POST"])
-def user5():
+@app.route('/login', methods=["GET","POST"])
+def login():
 
     #return str(request.form.keys)
     name=request.form['name']
-
-
 
     return "Hello " + name
 

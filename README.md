@@ -4,6 +4,53 @@ messageboard
 student project building a simple messageboard
 
 
+install requirements
+--------------------
+    
+**download and install**
+ 
+    - [virtualbox](http://example.com/)
+    - uppdatera er mmessageboard app från github - dom här filerna
+    
+        
+
+create, activate and update virtualenv
+------------------------------
+
+ska redan vara gjort under lektionstid
+aktivera er virtualenv 
+
+vi ska installera lite nya bibliotek
+
+    - fabric och fabtool, för att kunna automatisera installationer
+    - python-vagrant för att enkelt kunna installera en virtuell linux på er dator 
+    
+vi gör det med pip
+    
+    cd till /path_to_messageboard
+
+där borde ni hitta en fil requirements.txt, glöm inte **virtualenv**
+
+    pip install -r requirements.txt
+
+
+install linux and couchdb
+-------------------------
+
+fortfarande i terminalen 
+    
+    fab install_couchdb
+
+första gången kan det ta ett litet tag, vagrant hämtar ner en linux-image 
+
+
+vad ska vi göra med det här, vänta och se på onsdags lektionen
+
+
+
+TODO
+====
+
 **API ENDPOINTS**
 
 / shows hot posts
