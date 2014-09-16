@@ -9,7 +9,8 @@ install requirements
     
 **download and install**
  
-    - virtualbox https://www.virtualbox.org/wiki/Downloads
+    - virtualbox 
+      https://www.virtualbox.org/wiki/Downloads
     - uppdatera er mmessageboard app från github - dom här filerna
     
         
