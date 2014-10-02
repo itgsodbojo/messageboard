@@ -20,3 +20,11 @@ body {
     color:   rgba(19, 19, 19, 0.40);
     font-style: italic;
 }
+.post {
+    height:100px;
+    width:500px;
+    background-color: firebrick;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
