@@ -2,10 +2,13 @@ from flask import render_template, request
 
 from messageboard import app
 
+from flask_login import current_user
+
 from messageboard.models import User
 
 
 
-@app.route('/user/<name>/settings', methods=["GET"])
-def user_setting(name):
-    return "Hello " + name + " your settings"
+@app.route('/settings', methods=["GET"])
+def user_settings():
+    if current_user.is_authenticated():
+        return "Hello " + current_user.name + " this is your settings"
