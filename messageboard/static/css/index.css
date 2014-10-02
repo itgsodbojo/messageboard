@@ -87,7 +87,8 @@ button1 {
 
 button1:hover {
     background-color: #388844;
-    font-size:200%;
+    padding:10%;
+    font-size:100%;
 }
 
 button1:active {
