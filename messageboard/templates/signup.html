@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% block body %}
+
+    <link rel="stylesheet" type="text/css " href="static/css/signup.css"/>
+
+    <div id="signup_box">
+        <h1 id="signup_text">Sign up</h1>
+        <form id="form" action="/signup" method="POST">
+
+            <input type="text" placeholder="Email" name="email_signup">
+
+            <input type="text" placeholder="Username" name="username_signup"/>
+
+            <input type="password" placeholder="Password" name="password_signup"/>
+
+            <button type="submit" class="button_in_form">Sign up</button>
+
+        </form>
+
+    </div>
+{% endblock %}

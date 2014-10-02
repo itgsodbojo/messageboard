@@ -1,21 +1,27 @@
 from flask import Flask
 from couchdbkit import Server,push
+from flask_login import LoginManager
 
 #init the flask app
 app = Flask(__name__)
+
+app.secret_key = "troleolol"
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+
+
+
 
 
 # server object
 server = Server()
 
-# create database
-db = server.get_or_create_db("greeting")
-userdb = server.get_or_create_db("user")
-
 
 # create databases
 db = server.get_or_create_db("post")
 userdb = server.get_or_create_db("user")
+emaildb = server.get_or_create_db("email")
 
 
 # from models.post import Post
@@ -31,4 +37,4 @@ userdb = server.get_or_create_db("user")
 push('messageboard/designdocs/Post', db)
 
 import models
-from views import utils, post, user
+from views import login, post, user, signup, home

@@ -1,8 +1,58 @@
 {% extends "layout.html" %}
+{% block head %}
+
+    <link rel="stylesheet" type="text/css" href="static/css/index.css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <div id="header_panel">
+        <a href="/"><h2>ReddITG</h2></a>
+        {% if user %}
+            <div id="user_container">
+                <ul id="user_bar">
+                    <li>
+                        <a href="/user/{{ user }}">
+                            <button class="button_nav_bar"><i class="fa fa-user"></i> {{ user }}</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/settings">
+                            <button class="button_nav_bar"><i class="fa fa-cog"></i> Settings</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/logout">
+                            <button class="button_nav_bar"><i class="fa fa-sign-out"></i> Sign out</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        {% else %}
+            <div id="user_container">
+                <ul id="user_bar">
+                    <li>
+                        <a href="/login">
+                            <button class="button_nav_bar"><i class="fa fa-sign-in"></i> Sign in</button>
+                        </a>
+                    </li>
+
+                    <li>
+                       <a href="/signup">
+                           <button class="button_nav_bar"><i class="fa fa-user"></i> Sign up</button>
+                       </a>
+                    </li>
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock %}
+
 {% block body %}
 
-
-
-    <div>Hello {{name}}</div>
+    <div id="post_nav_bar">
+        <a href="/createpost"><button id="post_nav_bar_button_create_post"><i class="fa fa-file-text-o"></i> Submit a new post</button></a>
+    </div>
 
 {% endblock %}

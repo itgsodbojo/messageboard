@@ -4,10 +4,13 @@
     {% if title %}
         <title>{{title}}</title>
     {% else %}
-        <title>No title</title>
+        <title>ReddITG</title>
     {% endif %}
+
+    {% block head %}{% endblock %}
   </head>
   <body>
     {% block body %}{% endblock %}
   </body>
 </html>
+

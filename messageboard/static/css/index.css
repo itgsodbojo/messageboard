@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+#header_panel {
+    height: 10%;
+    width: 100%;
+    background: #3ba45c;
+    position: fixed;
+    top: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ebebeb;
+    font-family:'Open Sans',sans-serif;
+}
+
+a:visited {
+    color: white;
+    height: 100%;
+}
+
+ul {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+
+}
+
+.button_nav_bar {
+    height: 100%;
+    margin-right: -10px;
+}
+
+button {
+    background: #3ba45c;
+    border:0;
+    padding:4%;
+    font-family:'Open Sans',sans-serif;
+    font-size:100%;
+    color:#fff;
+    cursor:pointer;
+    transition:background .3s;
+    -webkit-transition:background .3s;
+}
+
+button:hover {
+    background-color: #388844;
+}
+
+button:active {
+    border: none;
+    outline: none;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+#user_container {
+    width: 30%;
+    height: 100%;
+    margin-left: 70%;
+    margin-right: 10%;
+}
+
+h2 {
+    position: absolute;
+    top: -5px;
+    text-align: center;
+    color: rgba(117, 255, 218, 0.88);
+    left: 20px;
+    font-family: 'open sans', sans-serif;
+}
+
+#post_box {
+    height: 8%;
+    background-color: #2b6778;
+    margin-top: 10px;
+    width: 80%;
+}
+
+#post_box:hover {
+    background-color: #2a6474;
+}
+
+#post_list {
+    margin-top: 8%;
+}
+
+#para_post_author {
+    font-family:'Open Sans',sans-serif;
+    margin-left: 10%;
+    font-size: 70%;
+    color: lightblue;
+    margin-top: -0.1%;
+    margin-bottom: 0;
+}
+
+#anchor_post_content {
+    margin-left: 5%;
+}
+
+#anchor_post_content:hover {
+    text-decoration: underline;
+}
+
+#anchor_post_author:hover {
+    text-decoration: underline;
+}
+
+#anchor_post_comments {
+    font-size: 75%;
+    margin-left: 10%;
+    margin-top: -1%;
+}
+
+#anchor_post_comments:hover {
+    text-decoration: underline;
+}
+
+#post_nav_bar {
+    position: fixed;
+    width: 18%;
+    padding: 1%;
+    top: 20%;
+    height: 20%;
+    margin-left: 80%;
+    float: right;
+}
+
+#post_nav_bar_button_create_post {
+    width: 100%;
+}
