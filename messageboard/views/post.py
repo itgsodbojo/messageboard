@@ -2,11 +2,21 @@ from flask import render_template, request
 
 from messageboard import app
 from messageboard.models.post import Post
-from flask_login import current_user
 
 #this is restfull route's
 @app.route('/user/<name>', methods=["GET"])
 def user_home(name):
+
+    user_id="a9514e98427c8e708c00960e431f1afc"
+
+    newpost=Post(
+    author_id = user_id,
+    content="Fish",
+    date=datetime.utcnow()
+    )
+
+    newpost.save()
+
 
     posts = Post.view('Post/all')
 
@@ -16,7 +26,12 @@ def user_home(name):
         if post.author == name:
             resp += "<li>" + post.content + "</li>"
             resp += "<li>" + post.author + "</li>"
+    return render_template("index.html", posts=posts)
 
+@app.route('/', methods=["GET"])
+def index_setting():
+    posts = Post.view('Post/all')
+    return "list all post"
     post_list = "<ul>" + resp + "</ul>"
 
     return post_list
