@@ -2,8 +2,7 @@ from flask import render_template, request
 
 from messageboard import app
 
-from messageboard.models import User
-
+from messageboard.models.post import Post
 
 
 @app.route('/user/<name>/settings', methods=["GET"])
