@@ -4,11 +4,9 @@ from messageboard.models.user import User
 class Post(Document):
     author_id = StringProperty()
     content = StringProperty()
+    content_hidden = StringProperty()
     date = DateTimeProperty()
     comments = ListProperty()
-
-    # def __int__(self,msg):
-    #     super(Post, self).init()
 
     @property
     def author(self):
