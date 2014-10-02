@@ -87,8 +87,10 @@ button1 {
 
 button1:hover {
     background-color: #388844;
-    padding:10%;
-    font-size:100%;
+    float: right;
+    width: 120%;
+    font-size: 200%;
+    text-align: center;
 }
 
 button1:active {
