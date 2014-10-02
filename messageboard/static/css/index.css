@@ -55,6 +55,7 @@ button {
 
 button:hover {
     background-color: #388844;
+    font-size:100%;
 }
 
 button:active {
@@ -63,6 +64,38 @@ button:active {
 }
 
 button:focus {
+    border: none;
+    outline: none;
+}
+
+.button1_nav_bar {
+    height: 100%;
+    margin-right: -10px;
+}
+
+button1 {
+    background: #3ba45c;
+    border:0;
+    padding:4%;
+    font-family:'Open Sans',sans-serif;
+    font-size:100%;
+    color:#fff;
+    cursor:pointer;
+    transition:background .3s;
+    -webkit-transition:background .3s;
+}
+
+button1:hover {
+    background-color: #388844;
+    font-size:200%;
+}
+
+button1:active {
+    border: none;
+    outline: none;
+}
+
+button1:focus {
     border: none;
     outline: none;
 }
