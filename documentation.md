@@ -11,8 +11,8 @@ Database documentation
 
 ----------
 
+> The database's flowchart.
 
-***Database flowchart***
 ![Database flowchart](http://i.imgur.com/juEQaoA.png)
 
 Endpoints
