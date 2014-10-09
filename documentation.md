@@ -8,8 +8,11 @@ Database documentation
 
 > The database we are using is called [CouchDB](http://couchdb.apache.org/) which uses **JSON** for its documents.
 
-    Database flowchart
 
+----------
+
+
+***Database flowchart***
 ![Database flowchart](http://i.imgur.com/juEQaoA.png)
 
 Endpoints
